@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>{{ title }}</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+
+<body>
+	<img src="owl-47.png">
+	<h2>Forest Friends Ireland Library List<br>{{ datetime }}<br>Press Ctrl + F to search</h2>
+	<table style="width:80%; margin:auto;">
+		<tr class="t_headers">
+			<th>Book ID</th>
+			<th>Book Title</th>
+			<th>Book Author</th>
+			<th>Available?</th>
+		</tr>
+		{% for item in table_contents %}
+		<tr>
+			<td>{{item.index}}</td>
+			<td>{{item.title}}</td>
+			<td>{{item.author}}</td>
+			<td>{{item.available}}</td>
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>

@@ -1,5 +1,6 @@
 # Library-Management-App
-- a management system to keep track of the book 
+<img src="screen.PNG"></img>
+- A management system to keep track of the book 
 inventory of our library.
 
 ## High Level Information

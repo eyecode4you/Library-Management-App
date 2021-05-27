@@ -2,7 +2,6 @@
 	Author: EyeCode4You
 	Date: 09/05/2021
 """
-from docx.shared import Cm, Inches, Mm, Emu
 from docxtpl import DocxTemplate
 from time import time, localtime, asctime
 from docx2pdf import convert
